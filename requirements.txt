@@ -1,0 +1,8 @@
+matplotlib==3.2.2
+networkx==2.4
+numpy==1.19.1
+psutil==5.7.3
+psutil==5.7.2
+ryu==4.34
+sympy==1.12
+tqdm==4.60.0
