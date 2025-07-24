@@ -1,6 +1,6 @@
 # Source Code for Host-Based Path Selection and Scalable Power-of-Two Routing in Data Center Networks: HPS and PowerPath
 
-## What is HPS?
+## 🚀 What is HPS?
 In data center networks (DCNs), path selection via equal-cost multi-path (ECMP) hashing often leads to path overlap and port overuse, degrading performance. While recent techniques let hosts influence egress port selection through single-bit header changes, they offer limited coverage and are restricted to one-hop control. We propose a host-based path selector (HPS) that enables source hosts to steer packets across multiple hops by applying targeted multi-bit header modifications. HPS relies on two key principles: (a) leveraging predictable relationships in relative hash changes to control egress ports, and (b) applying criteria that ensure header changes guide packets along the intended path. HPS adjusts headers only at selected hops with diverging next-hop options, using test packets to compute valid modifications. This yields efficient, accurate path selection with polynomial-time complexity, constant space, and optional parallel acceleration for large-scale scalability. We evaluated HPS on two- to five-layer DCN topologies with up to 1000 random paths and varied ECMP hash functions. HPS consistently achieved high selection accuracy and low runtime, reducing path overlap by up to 36.6\% over ECMP and outperforming RePaC. NS-3 simulations further validated its ability to mitigate DCTCP incast congestion and enhance transport performance.
 
 ### Environment Setup for HPS Controller with NS-3 Data Plane
@@ -28,7 +28,7 @@ python ./dcn_sim.py --help
 [2] Boyang Zhou, Chunming Wu, etc., "Precise and Scalable Host-Based Path Selection via ECMP Hash Linearity in Data Center Networks," IEEE/ACM Transactions on Networking, 2025 (an extended version of HPCC paper, currently under submission)
 
 
-## What is PowerPath?
+## 🔁 What is PowerPath?
 In modern multi-layer data center networks, a key challenge for ECMP-based routing is ensuring that each in-path hop offers a power-of-two number of next hops—a requirement for preserving ECMP hash linearity and enabling deterministic host-side path selection. This constraint is frequently violated in irregular or dynamic topologies, calling for constraint-aware path generation. However, the problem is non-trivial: it is NP-complete via reduction from SAT. To address this, we propose PowerPath, a scalable and deployable path generation scheme that enforces the power-of-two constraint while promoting balanced link utilization. Rooted at the source, PowerPath performs lightweight breadth-first traversals to expose path connectivity, followed by randomized allocation and controlled branching to construct constraint-compliant paths—all within polynomial time and with low routing overhead. We evaluate PowerPath in NS-3 on large-scale Aspen topologies with 8–16-port switches, demonstrating strict constraint adherence, scalable routing table sizes, and substantial transport-layer improvements. When combined with host-side disjoint path selection, PowerPath achieves up to 8.05\% mean and 24.61\% tail goodput gains over traditional ECMP.
 
 ### Where is PowerPath and How is it Integrated in HPS controller?
