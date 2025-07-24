@@ -24,6 +24,7 @@ python ./dcn_sim.py --help
 
 ### Papers
 [1] Boyang Zhou, Chunming Wu and Qiang Yang, "Enabling Source Hosts to Precisely Select Paths via ECMP Hash Linearity in Data Center Networks," 2024 IEEE International Conference on High Performance Computing and Communications (HPCC), Wuhan, China, 2024, pp. 1633-1642, doi: 10.1109/HPCC64274.2024.00216. Available at: https://ieeexplore.ieee.org/document/11083286 
+
 [2] Boyang Zhou, Chunming Wu, etc., "Precise and Scalable Host-Based Path Selection via ECMP Hash Linearity in Data Center Networks," IEEE/ACM Transactions on Networking, 2025 (an extended version of HPCC paper, currently under submission)
 
 
