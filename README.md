@@ -25,7 +25,7 @@ python ./dcn_sim.py --help
 ### Papers
 [1] Boyang Zhou, Chunming Wu and Qiang Yang, "Enabling Source Hosts to Precisely Select Paths via ECMP Hash Linearity in Data Center Networks," 2024 IEEE International Conference on High Performance Computing and Communications (HPCC), Wuhan, China, 2024, pp. 1633-1642, doi: 10.1109/HPCC64274.2024.00216. Available at: https://ieeexplore.ieee.org/document/11083286 
 
-[2] Boyang Zhou, Chunming Wu, etc., "Precise and Scalable Host-Based Path Selection via ECMP Hash Linearity in Data Center Networks," IEEE/ACM Transactions on Networking, 2025 (an extended version of HPCC paper, currently under submission)
+[2] Boyang Zhou, Chunming Wu, and Qiang Yang., "Precise and Scalable Host-Based Path Selection via ECMP Hash Linearity in Data Center Networks," IEEE/ACM Transactions on Networking, 2025 (an extended version of HPCC paper, currently under submission)
 
 
 ## 🔁 What is PowerPath?
@@ -40,7 +40,7 @@ Before running PowerPath, ensure that the HPS controller is properly set up as d
 (b) Follow the batch testing procedure described earlier to evaluate PowerPath's performance within the NS-3 simulation environment.
 
 ### Paper
-[1] Boyang Zhou, Chunming Wu, etc., "Scalable Power-of-Two Routing for Host-Driven ECMP Path Selection in Data Center Networks," IEEE/ACM Transactions on Networking, 2025 (currently under submission)
+[1] Boyang Zhou, Chunming Wu, and Qiang Yang, "Scalable Power-of-Two Routing for Host-Driven ECMP Path Selection in Data Center Networks," IEEE/ACM Transactions on Networking, 2025 (currently under submission)
 
 
  *********************************************************************************
